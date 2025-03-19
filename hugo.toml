@@ -1,0 +1,61 @@
+baseURL = 'https://zhuacong.com/'
+languageCode = 'zh-cn'
+title = 'Zhuacong: Logic & Methodology Hub'
+theme = 'PaperMod'
+
+[params]
+  description = "逻辑与方法论 - A hub for logical thinking and methodological insights"
+  author = "Zhuacong"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  
+  [params.homeInfoParams]
+    Title = "欢迎来到 Zhuacong"
+    Content = """
+    这是一个专注于逻辑思维和方法论的知识中心。
+    
+    在这里，我们探索思维的结构、方法的力量以及如何将它们应用于现实世界的问题解决。
+    """
+    
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+    
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@zhuacong.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+    
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 30
+    
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
